@@ -35,7 +35,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         ResultsItem resultsItem = resultsItemsArrayList.get(position);
-        holder.mID.setText(resultsItem.getId());
+       // holder.mID.setText(resultsItem.getId());
         holder.mName.setText(resultsItem.getName());
         holder.mAddress.setText(resultsItem.getFormattedAddress());
 
@@ -67,7 +67,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            mID = (TextView) itemView.findViewById(R.id.id);
+            //mID = (TextView) itemView.findViewById(R.id.id);
             mName = (TextView) itemView.findViewById(R.id.name);
             mAddress = (TextView) itemView.findViewById(R.id.address);
             mDetails = (Button) itemView.findViewById(R.id.details);
